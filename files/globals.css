@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #080b10;
+  color: #f0f6fc;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  height: 100%;
+}
+
+#__next {
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #21262d;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #30363d;
+}
+
+.neon-cyan {
+  text-shadow: 0 0 20px rgba(0, 245, 255, 0.7);
+  color: #00f5ff;
+}
+
+.neon-purple {
+  text-shadow: 0 0 20px rgba(191, 90, 242, 0.7);
+  color: #bf5af2;
+}
+
+.glow-border-cyan {
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.15), inset 0 0 12px rgba(0, 245, 255, 0.05);
+}
+
+.glow-border-purple {
+  border: 1px solid rgba(191, 90, 242, 0.3);
+  box-shadow: 0 0 12px rgba(191, 90, 242, 0.15), inset 0 0 12px rgba(191, 90, 242, 0.05);
+}
+
+.message-hover:hover {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+}
+
+.channel-active {
+  background: rgba(0, 245, 255, 0.08);
+  color: #00f5ff;
+}
+
+.server-active {
+  border-radius: 16px;
+  box-shadow: 4px 0 0 0 #00f5ff;
+}
+
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
